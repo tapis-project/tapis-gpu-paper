@@ -1,0 +1,20 @@
+{
+    "extra_pod_config": {
+        "nodeSelector": {
+            "gpu": "v100"
+        },
+        "tolerations": [
+            {
+                "key": "nvidia.com/gpu",
+                "operator": "Exists",
+                "effect": "NoSchedule"
+            }
+        ]
+    },
+    "extra_resource_guarantees": {
+        "nvidia.com/gpu": "1"
+    },
+    "extra_resource_limits": {
+        "nvidia.com/gpu": "1"
+    }
+}
