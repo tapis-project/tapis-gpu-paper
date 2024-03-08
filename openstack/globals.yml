@@ -1,0 +1,8 @@
+nova_pci_passthrough_whitelist:
+  - vendor_id: 10de   # NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
+    product_id: 1db4
+nova_pci_passthrough_alias:
+  - name: v100
+    vendor_id: 10de
+    product_id: 1db4
+    device_type: type-PCI
